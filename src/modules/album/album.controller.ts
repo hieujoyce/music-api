@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 // import songModel from "../song/song.model";
 import albumModel from "./album.model";
 
-//[62869222, 153280322, 363410117, 147221692, 108710042, 234168882]
 export async function getAllAblums(req: Request, res: Response) {
   try {
     const [albums, total] = await Promise.all([
@@ -88,9 +87,12 @@ export async function getDetailAblum(req: Request, res: Response) {
 //   }
 // }
 
-// const data = await createDataAlbum(234168882);
-//     if (!data)
-//       return res.json({
-//         status: "Loi roi",
-//       });
-//     await albumModel.create(data);
+// const data = await createDataAlbum(44903361);
+// if (!data)
+//   return res.json({
+//     status: "Loi roi",
+//   });
+// await albumModel.create(data);
+// return res.json({
+//   status: "success",
+// });

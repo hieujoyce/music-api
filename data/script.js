@@ -5,7 +5,7 @@ const path = require("path");
 const options = {
   method: "GET",
   url: "https://deezerdevs-deezer.p.rapidapi.com/search",
-  params: { q: "bts" },
+  params: { q: "tuan hung" },
   headers: {
     "X-RapidAPI-Key": "31c960e190msh53eac10e2323889p18e501jsn42f213ff05fe",
     "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
@@ -100,7 +100,7 @@ async function main(artistIdSearch, albumIdSearch) {
   }
 }
 
-main(6982223);
+main(2352221, [44903291, 44903361]);
 
 function tranformData(data) {
   return data.map((el) => {
@@ -135,7 +135,7 @@ function foo(array) {
 function oof([a, b]) {
   let obj = {};
   a.forEach((el, index) => {
-    if (b[index] >= 20) {
+    if (b[index] >= 10) {
       obj[`${el}`] = b[index];
     }
   });

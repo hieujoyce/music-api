@@ -2,7 +2,6 @@ import app from "./app";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 dotenv.config();
-require("./modules/artist/artist.model");
 
 const port = process.env.PORT || 5000;
 const dbUri = process.env.MONGODB_URI as string;
